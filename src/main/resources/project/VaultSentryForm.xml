@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<editor>
+    <help>/commander/pages/@PLUGIN_NAME@/@PLUGIN_KEY@_help?s=Administration&amp;ss=Plugins#getSCMTag</help>
+    <formElement>
+        <label>Configuration:</label>
+        <property>config</property>
+        <value></value>
+        <documentation>The name of a saved SCM configuration.</documentation>
+        <required>1</required>
+        <type>entry</type>
+    </formElement>
+    <formElement>
+        <label>Path to Vault.exe</label>
+        <property>VaultPath</property>
+        <value>Vault.exe</value>
+        <documentation>Fill here path to vault.exe e.g. C:\Program Files\SourceGear\Fortress\Vault.exe</documentation>
+        <required>1</required>
+        <type>entry</type>
+    </formElement>
+    <formElement>
+        <label>Repository</label>
+        <property>VaultRepository</property>
+        <value></value>
+        <documentation>Repository name</documentation>
+        <required>1</required>
+        <type>entry</type>
+    </formElement>
+    <formElement>
+        <label>Repository Folder</label>
+        <property>RepositoryFolder</property>
+        <value></value>
+        <documentation>Folder path in vault. e.g. $/somefolder. This needs to always start with $/ and the plugin checks changes in this given folder only (recursively)</documentation>
+        <required>1</required>
+        <type>entry</type>
+    </formElement>
+    <formElement>
+        <type>entry</type>
+        <label>Quiet time minutes:</label>
+        <property>QuietTimeMinutes</property>
+        <documentation>The number of minutes of no check-in activity required before launching the procedure.</documentation>
+    </formElement>
+    <formElement>
+        <type>checkbox</type>
+        <label>Enabled for ElectricSentry:</label>
+        <property>TriggerFlag</property>
+        <checkedValue>2</checkedValue>
+        <uncheckedValue>0</uncheckedValue>
+        <initiallyChecked>1</initiallyChecked>
+        <documentation>Enable for continuous integration monitoring by ElectricSentry.</documentation>
+    </formElement>
+    <formElement>
+        <property>priority</property>
+        <configurable>1</configurable>
+    </formElement> 
+    <formElement>
+        <property>scheduleDisabled</property>
+        <value>1</value>
+    </formElement>
+</editor>

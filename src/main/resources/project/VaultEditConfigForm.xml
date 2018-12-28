@@ -1,0 +1,19 @@
+<editor> 
+    <formElement>
+        <type>textarea</type>
+        <label>Description:</label>
+        <property>desc</property>
+        <value>Vault configuration</value>
+    </formElement>
+     <formElement>
+        <type>entry</type>
+        <label>Server Name:</label>
+        <property>Server</property>
+        <required>1</required>
+    </formElement>
+    <formElement>
+        <type>credential</type>
+        <label>Login As:</label>
+        <property>credential</property>
+    </formElement>
+</editor>
